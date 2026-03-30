@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #13ec13;
+  --color-background-light: #f6f8f6;
+  --color-background-dark: #102210;
+  
+  --font-display: "Plus Jakarta Sans", sans-serif;
+  --font-sans: "Plus Jakarta Sans", sans-serif;
+}
+
+@layer base {
+  body {
+    @apply bg-background-dark text-white min-h-screen;
+    font-family: "Plus Jakarta Sans", sans-serif;
+  }
+}
+
+@layer utilities {
+  .custom-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .hide-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .glass-overlay {
+    @apply bg-background-dark/60 backdrop-blur-md;
+  }
+  .scan-line {
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #13ec13, transparent);
+    box-shadow: 0 0 15px #13ec13;
+    animation: scan 2s linear infinite;
+  }
+}
+
+@keyframes scan {
+  0% { top: 0%; }
+  100% { top: 100%; }
+}

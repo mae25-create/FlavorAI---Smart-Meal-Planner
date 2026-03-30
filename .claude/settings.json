@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(ls -la /Users/mjh/Documents/GitHub/FlavorAI---Smart-Meal-Planner-main/.env*)"
+    ]
+  }
+}

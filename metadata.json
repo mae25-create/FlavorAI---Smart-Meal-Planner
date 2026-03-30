@@ -1,0 +1,7 @@
+{
+  "name": "FlavorAI - Smart Meal Planner",
+  "description": "An AI-powered meal planning application that analyzes your fridge and generates custom recipes based on your dietary preferences and available ingredients.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}
